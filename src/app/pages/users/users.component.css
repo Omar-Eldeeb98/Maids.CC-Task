@@ -1,0 +1,149 @@
+.header-container {
+    background-color: #323C46 !important;
+
+}
+
+.header-container .logo-container {
+    width: 300px;
+    display: flex;
+    padding: 16px;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+
+}
+
+
+.card-body {
+    background-color: #323C46;
+    border-radius: 6px;
+    margin-top: 8px;
+}
+
+.search-container input {
+    background-color: #4468B0 !important;
+    color: white;
+    border: 1px solid white;
+}
+
+
+.email-container {
+    width: fit-content !important;
+}
+
+.userName-container {
+    width: fit-content !important;
+}
+
+.search-container input:focus {
+    box-shadow: none !important;
+}
+
+.search-container input::placeholder {
+    color: gainsboro;
+    text-transform: capitalize;
+}
+
+.card {
+    background-color: #4468B0;
+    cursor: pointer;
+}
+
+
+p span {
+    background-color: #323C46;
+    padding: 3px;
+    margin-inline-end: 3px;
+    border-radius: 4px;
+    border: 1px solid #4468B0;
+}
+
+.id-container {
+    width: fit-content !important;
+    margin-inline: auto !important;
+}
+
+.my-pagination {
+    background-color: #323C46;
+}
+
+.my-pagination ::ng-deep .ngx-pagination .current {
+    background: #4468B0;
+    padding: 4px 12px;
+    border-radius: 8px;
+    color: white;
+}
+
+.my-pagination ::ng-deep .ngx-pagination a {
+
+    color: white;
+    background-color: gray;
+    border-radius: 8px;
+    margin-inline: 4px;
+    text-decoration: none;
+
+}
+
+.my-pagination ::ng-deep .ngx-pagination a:hover {
+    background-color: #4468B0;
+    color: white;
+}
+
+.my-pagination ::ng-deep .ngx-pagination .disabled {
+    color: white;
+    background-color: gray;
+    border-radius: 8px;
+    margin-inline: 4px;
+    text-decoration: none;
+}
+
+.my-pagination ::ng-deep .ngx-pagination .small-screen {
+    color: white !important;
+}
+
+.card {
+    position: relative;
+    transition: all 0.3s ease-in-out;
+}
+
+.card:hover {
+    transform: scale(1.03)
+}
+
+.card i.abs_ {
+    position: absolute;
+    color: #4468B0;
+    font-size: 30px;
+    top: 2%;
+    left: 2%;
+    background-color: #323C46;
+    padding: 8px;
+    border-radius: 4px;
+}
+
+
+
+/*!mobile*/
+@media (max-width: 576px) {
+
+    .header-container .logo-container {
+        margin-inline: auto;
+        width: 250px;
+        padding-inline-end: 35px;
+    }
+
+
+
+
+    .search-container h2 {
+        font-size: 20px;
+        text-align: center;
+    }
+
+
+
+
+}
+
+/*!tablet*/
+@media (min-width: 768px) {}

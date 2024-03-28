@@ -1,0 +1,17 @@
+section .header-container {
+    background-color: #323C46;
+}
+
+.logo-container img {
+    width: 250px !important;
+}
+
+/*!mobile*/
+@media (max-width: 576px) {
+
+    .header-container .logo-container {
+        margin-inline: auto;
+        width: 250px;
+        padding-inline-end: 35px;
+    }
+}

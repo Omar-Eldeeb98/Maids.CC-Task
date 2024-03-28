@@ -1,0 +1,97 @@
+<div class="d-flex flex-column justify-content-between vh-100">
+  <!--^ header section -->
+  <section class="animate__animated animate__backInLeft">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-12 col-lg-12">
+          <div class="header-container mt-1 rounded shadow p-2">
+            <div class="row align-items-center g-3">
+              <div class="col-md-6">
+                <div
+                  class="logo-container animate__animated animate__pulse animate__delay-2s animate__slow animate__infinite"
+                >
+                  <img src="assets/footer.svg" alt="logo" class="w-100" />
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="title me-0">
+                  <h1 class="text-white text-uppercase fw-bold text-center">
+                    user details : <i class="fa-solid fa-address-card mx-2"></i>
+                  </h1>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--^ header section -->
+
+  <!--^ user details section -->
+
+  <section class="mb-3">
+    <div class="container-fluid animate__animated animate__backInLeft">
+      <div
+        class="row_ row py-3 mt-3 justify-content-center align-items-start rounded shadow w-100 m-auto g-3 mb-3"
+      >
+        <div class="col-md-4 col-lg-3">
+          <div class="user-image">
+            <img
+              [src]="userDetails.avatar"
+              [alt]="userDetails.first_name"
+              class="w-100 img-thumbnail"
+            />
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="user-details">
+            <p class="bg-dark text-white rounded mt-2 p-2">
+              <span> <i class="fa-solid fa-pen mx-1"></i>First Name:</span>
+              <span class="_span mx-2"> {{ userDetails.first_name }}</span>
+            </p>
+            <hr class="text-white" />
+            <p class="bg-dark text-white rounded mt-2 p-2">
+              <span> <i class="fa-solid fa-pen mx-1"></i> Last Name:</span>
+              <span class="_span mx-2">{{ userDetails.last_name }}</span>
+            </p>
+            <hr class="text-white" />
+            <p class="bg-dark text-white rounded mt-2 p-2">
+              <span> <i class="fa-solid fa-envelope mx-1"></i> Email:</span>
+              <span class="_span mx-2">{{ userDetails.email }}</span>
+            </p>
+            <hr class="text-white" />
+            <p class="bg-dark text-white rounded mt-2 p-2">
+              <span> <i class="fa-solid fa-id-card-clip mx-1"></i> ID:</span>
+              <span class="_span mx-2"> {{ userDetails.id }}</span>
+            </p>
+          </div>
+
+          <div class="mt-4 d-flex align-items-center justify-content-center">
+            <button class="cssbuttons-io-button" routerLink="/users">
+              GO BACK
+              <div class="icon">
+                <svg
+                  height="24"
+                  width="24"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path d="M0 0h24v24H0z" fill="none"></path>
+                  <path
+                    d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z"
+                    fill="currentColor"
+                  ></path>
+                </svg>
+              </div>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--^ user details section -->
+
+  <app-footer></app-footer>
+</div>

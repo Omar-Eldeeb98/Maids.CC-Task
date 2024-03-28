@@ -1,0 +1,138 @@
+section .header-container {
+    background-color: #323C46;
+}
+
+.col-md-6 .title {
+    background-color: #4368AF;
+    padding: 4px;
+    border-radius: 6px;
+    width: fit-content;
+    padding-inline: 10px;
+    margin-inline: auto;
+    margin-bottom: 10px !important;
+}
+
+.logo-container {
+    width: 300px;
+    overflow: hidden;
+    padding: 8px;
+}
+
+.row_ {
+    background-color: #323C46;
+}
+
+.user-details {
+    background-color: #4368AF;
+    padding: 8px;
+    border-radius: 6px !important;
+
+
+}
+
+
+
+.user-details p span {
+    background-color: #323C46;
+    border-radius: 4px;
+    padding: 4px;
+    border: 1px solid #4368AF;
+}
+
+
+
+
+/*! styling back button */
+
+
+.cssbuttons-io-button {
+    background: black;
+    color: white;
+    font-family: inherit;
+    padding: 0.35em;
+    padding-left: 1.2em;
+    font-size: 17px;
+    font-weight: 500;
+    border-radius: 0.9em;
+    border: none;
+    letter-spacing: 0.05em;
+    display: flex;
+    align-items: center;
+    box-shadow: inset 0 0 1.6em -0.6em #714da6;
+    overflow: hidden;
+    position: relative;
+    height: 2.8em;
+    padding-right: 3.3em;
+    cursor: pointer;
+}
+
+.cssbuttons-io-button .icon {
+    background: #323C46;
+    margin-left: 1em;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 2.2em;
+    width: 2.2em;
+    border-radius: 0.7em;
+    box-shadow: 0.1em 0.1em 0.6em 0.2em black;
+    right: 0.3em;
+    transition: all 0.3s;
+}
+
+.cssbuttons-io-button:hover .icon {
+    width: calc(100% - 0.6em);
+}
+
+.cssbuttons-io-button .icon svg {
+    width: 5.1em;
+    transition: transform 0.3s;
+    color: #4368AF;
+
+}
+
+.cssbuttons-io-button:hover .icon svg {
+    transform: translateX(0.1em);
+}
+
+.cssbuttons-io-button:active .icon {
+    transform: scale(0.95);
+}
+
+/*! styling back button */
+
+
+
+/*!mobile*/
+@media (max-width: 576px) {
+
+    .header-container .logo-container {
+        margin-inline: auto;
+        width: 250px;
+        padding-inline-end: 35px;
+    }
+
+
+    .col-md-6 .title {
+
+
+        width: 100%;
+    }
+
+
+
+
+
+    .search-container h2 {
+        font-size: 20px;
+        text-align: center;
+    }
+
+
+
+
+}
+
+/*!tablet*/
+@media (min-width: 768px) {}
